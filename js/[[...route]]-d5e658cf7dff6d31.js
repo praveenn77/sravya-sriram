@@ -1522,7 +1522,6 @@
                     P = n.intrinsicDimensions,
                     O = Ye(n, ["url", "alt", "sm", "md", "lg", "xl", "responsiveImages", "crop", "smartCrop", "lazyLoad", "ImgCustom", "placeholderWidth", "rotation", "intrinsicDimensions"]);
                 if (!i) return null;
-                console.log("responsiveImages", p,i);
                 if (i.match(/img/)) {
                     return  (0, r.jsx)("img",Je({
                         loading: b ? "lazy" : "eager",
@@ -1749,7 +1748,7 @@
                 bt = (0, m.Z)(tt)(pt(), (function(n) {
                     return n.theme.components.BottomImage
                 })),
-                wt = "".concat("./KommDAeS01CR.ico");
+                wt = "".concat("./favicon.ico");
 
             function yt(n) {
                 var e, t = n.children,

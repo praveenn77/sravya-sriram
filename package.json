@@ -1,0 +1,12 @@
+{
+  "name": "sravya-sriram",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/praveenn77/sravya-sriram.git",
+  "author": "Praveen N <npu@live.in>",
+  "license": "MIT",
+  "dependencies": {
+    "fs": "^0.0.1-security",
+    "html-minifier": "^4.0.0"
+  }
+}

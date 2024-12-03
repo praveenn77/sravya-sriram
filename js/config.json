@@ -1,0 +1,688 @@
+{
+    "props": {
+        "pageProps": {
+            "wwsAPIVersion": "v1"
+        },
+        "apolloState": {
+            "GDS_GuestWedding:8c267ec2-e31f-4ab7-a569-8244cdd14edb": {
+                "__typename": "GDS_GuestWedding",
+                "id": "8c267ec2-e31f-4ab7-a569-8244cdd14edb",
+                "isPrivateRsvp": false,
+                "rsvpAsAPage": false,
+                "rsvpPageHidden": true
+            },
+            "GDS_SubEvent:87d5a6d6-fcdc-4cfb-84d9-3022515d19fe": {
+                "__typename": "GDS_SubEvent",
+                "attire": null,
+                "endTime": null,
+                "id": "87d5a6d6-fcdc-4cfb-84d9-3022515d19fe",
+                "name": "Ceremony",
+                "notes": null,
+                "time": null,
+                "type": "Ceremony",
+                "visible": true,
+                "location": null
+            },
+            "GDS_SubEvent:f9482106-1c54-4bf0-a5e6-c9bdc4a57bcc": {
+                "__typename": "GDS_SubEvent",
+                "attire": null,
+                "endTime": null,
+                "id": "f9482106-1c54-4bf0-a5e6-c9bdc4a57bcc",
+                "name": "Reception",
+                "notes": null,
+                "time": null,
+                "type": "Reception",
+                "visible": true,
+                "location": null
+            },
+            "GDS_Event:bf7ded95-eca6-47a7-b6df-a8d2de811dbc": {
+                "__typename": "GDS_Event",
+                "id": "bf7ded95-eca6-47a7-b6df-a8d2de811dbc",
+                "attire": null,
+                "endTime": null,
+                "name": "Reception",
+                "notes": null,
+                "time": null,
+                "type": "WeddingDay",
+                "visible": true,
+                "date": "2025-01-19",
+                "requireRsvp": true,
+                "sameVenue": null,
+                "location": null,
+                "subEvents": [{
+                    "__ref": "GDS_SubEvent:87d5a6d6-fcdc-4cfb-84d9-3022515d19fe"
+                }, {
+                    "__ref": "GDS_SubEvent:f9482106-1c54-4bf0-a5e6-c9bdc4a57bcc"
+                }]
+            },
+            "WWS_Theme:2707": {
+                "__typename": "WWS_Theme",
+                "id": 2707,
+                "name": "Peacock Nouveau - Purple \u0026 Gold",
+                "themeStyles": [{
+                    "id": 2076,
+                    "created_at": "2022-12-05T21:05:09.263Z",
+                    "updated_at": "2022-12-05T21:05:09.263Z",
+                    "styles": {
+                        "config": {
+                            "headerOnHero": false,
+                            "coupleInfo": {
+                                "coverPhotoId": "27d55c47-abdf-401f-9716-7d8774e2a3a8",
+                                "firstName": "Zahara",
+                                "fianceFirstName": "Hamilton",
+                                "weddingDate": "July 25, 2026",
+                                "weddingLocation": "St. Charles, MO"
+                            }
+                        },
+                        "images": {
+                            "top": "./assets/2eec6302-9f48-46c4-9a5a-3f504372c316"
+                        },
+                        "responsiveImages": {
+                            "top": {
+                                "smUrl": "./assets/33cc14ea-ee10-4c76-bb39-827e743a4aa6"
+                            }
+                        },
+                        "colors": {
+                            "background": "#4d1d46",
+                            "primary": "#ffffff",
+                            "primaryHover": "#ffffff",
+                            "primaryDisabled": "#ffffff"
+                        },
+                        "fonts": {
+                            "s1": {
+                                "fontFamily": "Libre Baskerville",
+                                "color": "#ffffff",
+                                "fontSize": "46px",
+                                "lineHeight": "44px",
+                                "fontWeight": "lighter",
+                                "textTransform": "uppercase",
+                                "letterSpacing": "6px"
+                            },
+                            "s2": {
+                                "fontFamily": "Libre Baskerville",
+                                "color": "#ffffff",
+                                "fontSize": "38px",
+                                "fontWeight": "normal",
+                                "letterSpacing": "3px",
+                                "textTransform": "uppercase"
+                            },
+                            "s3": {
+                                "fontFamily": "Libre Baskerville",
+                                "color": "#ffffff",
+                                "fontSize": "28px",
+                                "fontWeight": "normal",
+                                "textTransform": "uppercase",
+                                "letterSpacing": "3px"
+                            },
+                            "s4": {
+                                "fontFamily": "Libre Baskerville",
+                                "letterSpacing": "3px",
+                                "color": "#ffffff",
+                                "fontSize": "18px",
+                                "fontWeight": "400",
+                                "textTransform": "uppercase",
+                                "@media(max-width: 640px)": {
+                                    "font-size": "calc(18px * 0.85)"
+                                }
+                            },
+                            "s5": {
+                                "fontFamily": "Libre Baskerville",
+                                "letterSpacing": "3px",
+                                "color": "#ffffff",
+                                "fontSize": "18px",
+                                "lineHeight": "18px",
+                                "fontWeight": "400",
+                                "textTransform": "uppercase",
+                                "@media(max-width: 640px)": {
+                                    "font-size": "calc(18px * 0.85)"
+                                }
+                            },
+                            "s6": {
+                                "fontFamily": "Libre Baskerville",
+                                "letterSpacing": "2px",
+                                "color": "#ffffff",
+                                "fontSize": "14px",
+                                "fontWeight": "400",
+                                "textTransform": "none",
+                                "@media(max-width: 640px)": {
+                                    "font-size": "calc(14px * 0.9)"
+                                }
+                            },
+                            "tiny": {
+                                "fontFamily": "Libre Baskerville",
+                                "letterSpacing": "0px",
+                                "color": "#ffffff",
+                                "fontSize": "14px",
+                                "fontWeight": "400"
+                            },
+                            "title": {},
+                            "dateLocation": {},
+                            "nav": {},
+                            "sectionTitle": {},
+                            "itemTitle": {},
+                            "body": {},
+                            "bodyStrong": {}
+                        },
+                        "components": {
+                            "Button": {
+                                "backgroundColor": "#ffffff",
+                                "color": "#4d1d46",
+                                "textTransform": "normal",
+                                "letterSpacing": "2px",
+                                "fontWeight": "600 !important",
+                                "fontStyle": "normal"
+                            },
+                            "ButtonHover": {
+                                "backgroundColor": "#cccccc",
+                                "color": "#4d1d46"
+                            },
+                            "SiteTitle": {
+                                "paddingTop": "240px",
+                                "paddingBottom": "20px",
+                                "@media(max-width: 1280px)": {
+                                    "paddingTop": "180px"
+                                },
+                                "@media(max-width: 1024px)": {
+                                    "paddingTop": "150px"
+                                },
+                                "@media(max-width: 768px)": {
+                                    "paddingTop": "140px"
+                                },
+                                "@media(max-width: 600px)": {
+                                    "paddingTop": "80px",
+                                    "paddingBottom": "10px"
+                                },
+                                "@media(max-width: 500px)": {
+                                    "paddingTop": "35px"
+                                },
+                                "@media(max-width: 400px)": {
+                                    "paddingTop": "20px"
+                                },
+                                "@media(min-width: 1800px)": {
+                                    "paddingTop": "260px"
+                                },
+                                "@media(min-width: 1920px)": {
+                                    "paddingTop": "300px"
+                                },
+                                "@media(min-width: 2200px)": {
+                                    "paddingTop": "380px"
+                                }
+                            },
+                            "Hero": {
+                                "@media(min-width: 768px)": {
+                                    "paddingLeft": "20px",
+                                    "paddingRight": "20px",
+                                    "maxWidth": "1200px"
+                                }
+                            },
+                            "Page": {
+                                "@media(min-width: 768px)": {
+                                    "padding-top": ""
+                                }
+                            },
+                            "Nav": {
+                                "Desktop": {
+                                    "margin-top": "25px"
+                                }
+                            },
+                            "Card": {}
+                        },
+                        "email": {
+                            "colors": {
+                                "background": "#ffffff",
+                                "color": "#4d1d46"
+                            },
+                            "images": {
+                                "top": "./assets/6afd440d-3b5a-442a-a953-b884cedbbec4"
+                            },
+                            "components": {
+                                "Card": {
+                                    "backgroundColor": "#4d1d46",
+                                    "borderColor": "#ffffff"
+                                },
+                                "Button": {
+                                    "backgroundColor": "#ffffff",
+                                    "color": "#4d1d46",
+                                    "fontFamily": "Times, Times New Roman, Calibri",
+                                    "borderRadius": "4px",
+                                    "fontSize": "16px"
+                                },
+                                "Subject": {
+                                    "fontFamily": "Times, Times New Roman, Calibri",
+                                    "color": "#ffffff",
+                                    "fontSize": "20px",
+                                    "fontWeight": "lighter"
+                                },
+                                "BodyText": {
+                                    "fontFamily": "Times, Times New Roman, Calibri",
+                                    "color": "#ffffff",
+                                    "paddingLeft": "50px",
+                                    "paddingRight": "50px",
+                                    "paddingTop": "8px",
+                                    "fontWeight": "lighter",
+                                    "fontSize": "15px"
+                                },
+                                "FooterText": {
+                                    "fontFamily": "Times, Times New Roman, Calibri",
+                                    "color": "#4d1d46",
+                                    "fontWeight": "lighter"
+                                }
+                            }
+                        },
+                        "lockups": {
+                            "SaveTheDate": {
+                                "container": {
+                                    "comment": "Outside container",
+                                    "background": "",
+                                    "\u0026 \u003e div": {
+                                        "comment": "nested container",
+                                        "background": "",
+                                        "\u0026 \u003e div:first-child": {
+                                            "comment": "names flourish",
+                                            "background": ""
+                                        },
+                                        "\u0026 \u003e div:last-child": {
+                                            "comment": "date-container",
+                                            "transform": "scale(0.85)"
+                                        }
+                                    }
+                                },
+                                "text": {}
+                            },
+                            "Name": {
+                                "container": {
+                                    "backgroundColor": "#4d1d46"
+                                },
+                                "customFont": "@font-face { font-family: 'EBGaramond-Medium'; font-style: normal; font-weight: 400; font-display: swap; src: url(./assets/EBGaramond-Medium.ttf) format('truetype'); unicode-range: U+?????; }",
+                                "nameBase": {
+                                    "color": "#ffffff",
+                                    "fontFamily": "EBGaramond-Medium",
+                                    "letterSpacing": ".15em",
+                                    "textTransform": "normal",
+                                    "fontSize": "2.2em",
+                                    "lineHeight": "3.4rem"
+                                },
+                                "firstName": {},
+                                "amp": {
+                                    "color": "#ffffff",
+                                    "background": "transparent url(./assets/686a3818-222b-440c-b243-05ae53cf1cbf) no-repeat center center",
+                                    "backgroundSize": "auto 100%",
+                                    "height": "1.2rem"
+                                }
+                            },
+                            "DateLocation": {
+                                "customFont": "@font-face { font-family: 'EBGaramond-Medium'; font-style: normal; font-weight: 400; font-display: swap; src: url(./assets/EBGaramond-Medium.ttf) format('truetype'); unicode-range: U+?????; }",
+                                "date": {
+                                    "color": "#ffffff",
+                                    "fontFamily": "EBGaramond-Medium",
+                                    "letterSpacing": ".15em",
+                                    "textTransform": "normal",
+                                    "fontSize": "1.2rem",
+                                    "lineHeight": "1.8rem"
+                                },
+                                "location": {
+                                    "color": "#ffffff",
+                                    "fontFamily": "EBGaramond-Medium",
+                                    "letterSpacing": ".15em",
+                                    "textTransform": "normal",
+                                    "fontSize": "1.2rem",
+                                    "lineHeight": "1.8rem"
+                                }
+                            }
+                        },
+                        "RSVP": {
+                            "images": {
+                                "top": "./assets/2eec6302-9f48-46c4-9a5a-3f504372c316"
+                            },
+                            "responsiveImages": {
+                                "top": {
+                                    "smUrl": "./assets/33cc14ea-ee10-4c76-bb39-827e743a4aa6"
+                                }
+                            },
+                            "colors": {
+                                "background": "#4d1d46",
+                                "primary": "#ffffff",
+                                "primaryHover": "#ffffff",
+                                "primaryDisabled": "#ffffff"
+                            },
+                            "fonts": {
+                                "s1": {
+                                    "fontFamily": "Libre Baskerville",
+                                    "color": "#ffffff",
+                                    "fontSize": "52px",
+                                    "fontWeight": "400",
+                                    "textTransform": "uppercase",
+                                    "letterSpacing": "8px"
+                                },
+                                "s2": {
+                                    "fontFamily": "Libre Baskerville",
+                                    "color": "#ffffff",
+                                    "fontSize": "32px",
+                                    "fontWeight": "normal",
+                                    "letterSpacing": "4px",
+                                    "textTransform": "uppercase"
+                                },
+                                "s3": {
+                                    "fontFamily": "Libre Baskerville",
+                                    "color": "#ffffff",
+                                    "fontSize": "26px",
+                                    "fontWeight": "normal",
+                                    "textTransform": "none",
+                                    "letterSpacing": "2px"
+                                },
+                                "s4": {
+                                    "fontFamily": "Libre Baskerville",
+                                    "letterSpacing": "3px",
+                                    "color": "#ffffff",
+                                    "fontSize": "22px",
+                                    "fontWeight": "400",
+                                    "textTransform": "uppercase"
+                                },
+                                "s5": {
+                                    "fontFamily": "Libre Baskerville",
+                                    "letterSpacing": "3px",
+                                    "color": "#ffffff",
+                                    "fontSize": "22px",
+                                    "fontWeight": "400",
+                                    "textTransform": "uppercase"
+                                },
+                                "s6": {
+                                    "fontFamily": "Libre Baskerville",
+                                    "letterSpacing": "2px !important",
+                                    "color": "#ffffff",
+                                    "fontSize": "14px",
+                                    "fontWeight": "400",
+                                    "textTransform": "normal",
+                                    "fontStyle": "normal"
+                                },
+                                "tiny": {
+                                    "fontFamily": "Libre Baskerville",
+                                    "letterSpacing": "0px",
+                                    "color": "#ffffff",
+                                    "fontSize": "14px",
+                                    "fontWeight": "300"
+                                },
+                                "title": {},
+                                "dateLocation": {},
+                                "nav": {},
+                                "sectionTitle": {},
+                                "itemTitle": {},
+                                "body": {},
+                                "bodyStrong": {}
+                            },
+                            "components": {
+                                "BackgroundImage": {},
+                                "BottomImage": {},
+                                "TopImage": {}
+                            }
+                        }
+                    },
+                    "theme_id": 2707
+                }]
+            },
+            "WWS_EventGroupItem:136487577": {
+                "__typename": "WWS_EventGroupItem",
+                "id": 136487577,
+                "type": "EventGroupItem",
+                "rank": 1
+            },
+            "WWS_Page:92188387": {
+                "__typename": "WWS_Page",
+                "id": 92188387,
+                "routeName": "",
+                "show": true,
+                "title": "Our Wedding",
+                "type": "WeddingPage",
+                "items": [{
+                    "__ref": "WWS_EventGroupItem:136487577"
+                }]
+            },
+            "WWS_StoryItem:136499128": {
+                "__typename": "WWS_StoryItem",
+                "id": 136499128,
+                "type": "StoryItem",
+                "rank": 1,
+                "title": "Where do we meet",
+                "description": "\u003cp\u003eStay tunned for the story, comming soon...\u003c/p\u003e",
+                "photo": {
+                    "__typename": "WWS_Photo",
+                    "mediaUrl": "//wedding.appadamofmyeye.com/assets/img1.jpg",
+                    "mediaApiId": "fb5fb6f2-3281-4085-bcbd-ab0635cbcbd7",
+                    "width": 2339,
+                    "height": 1755,
+                    "cropX": 0,
+                    "cropY": 328,
+                    "rotation": null,
+                    "aspectRatio": {
+                        "__typename": "WWS_AspectRatio",
+                        "name": "4:3",
+                        "value": 1.333333
+                    }
+                }
+            },
+            "WWS_Page:92188388": {
+                "__typename": "WWS_Page",
+                "id": 92188388,
+                "routeName": "our-story",
+                "show": true,
+                "title": "Our Story",
+                "type": "StoryPage",
+                "items": [{
+                    "__ref": "WWS_StoryItem:136499128"
+                }]
+            },
+            "WWS_PhotoItem:136498975": {
+                "__typename": "WWS_PhotoItem",
+                "caption": null,
+                "date": "2024-11-18",
+                "height": 2300,
+                "id": 136498975,
+                "mediaApiId": "459c52bd-57e7-4c67-857c-a2ec97f8fabe",
+                "mediaUrl": "/assets/img1.jpg",
+                "width": 2339,
+                "rotation": null
+            },
+            "WWS_PhotoTimelineItem:136498974": {
+                "__typename": "WWS_PhotoTimelineItem",
+                "id": 136498974,
+                "type": "PhotoTimelineItem",
+                "rank": 1,
+                "layout": "grid",
+                "photoItems": [{
+                    "__ref": "WWS_PhotoItem:136498975"
+                }]
+            },
+            "WWS_PhotoItem:136498994": {
+                "__typename": "WWS_PhotoItem",
+                "caption": null,
+                "date": "2024-11-21",
+                "height": 2300,
+                "id": 136498994,
+                "mediaApiId": "84fdd001-beee-4b5e-a2e1-0f61aaeed1c3",
+                "mediaUrl": "/assets/img1.jpg",
+                "width": 2339,
+                "rotation": null
+            },
+            "WWS_PhotoTimelineItem:136498993": {
+                "__typename": "WWS_PhotoTimelineItem",
+                "id": 136498993,
+                "type": "PhotoTimelineItem",
+                "rank": 3,
+                "layout": "grid",
+                "photoItems": [{
+                    "__ref": "WWS_PhotoItem:136498994"
+                }]
+            },
+            "WWS_Page:92188389": {
+                "__typename": "WWS_Page",
+                "id": 92188389,
+                "routeName": "photos",
+                "show": true,
+                "title": "Photos",
+                "type": "PhotoPage",
+                "items": [{
+                    "__ref": "WWS_PhotoTimelineItem:136498974"
+                }, {
+                    "__ref": "WWS_PhotoTimelineItem:136498993"
+                }]
+            },
+            "WWS_Page:92188390": {
+                "__typename": "WWS_Page",
+                "id": 92188390,
+                "routeName": "wedding-party",
+                "show": false,
+                "title": "Wedding Party",
+                "type": "WeddingPartyPage",
+                "items": []
+            },
+            "WWS_Page:92188391": {
+                "__typename": "WWS_Page",
+                "id": 92188391,
+                "routeName": "q-a",
+                "show": false,
+                "title": "Q + A",
+                "type": "QAPage",
+                "items": []
+            },
+            "WWS_Page:92188392": {
+                "__typename": "WWS_Page",
+                "id": 92188392,
+                "routeName": "travel",
+                "show": false,
+                "title": "Travel",
+                "type": "TravelPage",
+                "items": []
+            },
+            "WWS_EmbedItem:136499129": {
+                "__typename": "WWS_EmbedItem",
+                "id": 136499129,
+                "type": "EmbedItem",
+                "title": "RSVP",
+                "description": "Please RSVP by January 1st, 2025",
+                "embedCode": "<div style=\"width:100%;height:0;padding-bottom:56%;position:relative;\"><iframe src=\"https://www.appadamofmyeye.com" style=\"border:0;position:absolute;top:0;left:0;width:100%;height:100%;\" allowfullscreen></iframe></div>"
+            },
+            "WWS_Page:92188393": {
+              "__typename": "WWS_Page",
+              "id": 92188393,
+              "routeName": "rsvp2",
+              "show": true,
+              "title": "RSVP",
+              "type": "ThingsToDoPage",
+              "items": [
+              {
+                "__ref": "WWS_EmbedItem:136499129"
+              }]
+          },
+            "WWS_Page:92188394": {
+                "__typename": "WWS_Page",
+                "id": 92188394,
+                "routeName": "registry",
+                "show": false,
+                "title": "Registry",
+                "type": "RegistryPage",
+                "items": []
+            },
+            "WWS_Page:92188660": {
+                "__typename": "WWS_Page",
+                "id": 92188660,
+                "routeName": "rsvp-try",
+                "show": false,
+                "title": "RSVP Try",
+                "type": "CustomPage",
+                "items": []
+            },
+            "WWS_WeddingWebsiteV2:25908291": {
+                "__typename": "WWS_WeddingWebsiteV2",
+                "id": 25908291,
+                "theme({\"themeId\":null})": {
+                    "__ref": "WWS_Theme:2707"
+                },
+                "fianceFirstName": "Ganesh",
+                "fianceLastName": "Sriram",
+                "firstName": "Sravya",
+                "lastName": "Naveen",
+                "hideCountdown": false,
+                "hideDate": false,
+                "registryNote": null,
+                "slug": "wedding",
+                "userUuid": "0cf53475-f370-4ca7-a584-2eeca98a116e",
+                "vanityRoot": "/",
+                "weddingLocation": "Plano, TX",
+                "weddingDateFormat": "natural",
+                "searchEngineIndexable": true,
+                "weddingDateRangeStart": null,
+                "weddingDateRangeEnd": null,
+                "weddingUuid": "8c267ec2-e31f-4ab7-a569-8244cdd14edb",
+                "announcement": null,
+                "purchaseDomain": null,
+                "coverPhotoPathWithCropbox": null,
+                "coverPhoto": null,
+                "photoAlbums": [],
+                "pages": [{
+                    "__ref": "WWS_Page:92188387"
+                }, {
+                    "__ref": "WWS_Page:92188388"
+                }, {
+                    "__ref": "WWS_Page:92188389"
+                }, {
+                    "__ref": "WWS_Page:92188390"
+                }, {
+                    "__ref": "WWS_Page:92188391"
+                }, {
+                    "__ref": "WWS_Page:92188392"
+                }, {
+                    "__ref": "WWS_Page:92188393"
+                }, {
+                    "__ref": "WWS_Page:92188394"
+                }, {
+                    "__ref": "WWS_Page:92188660"
+                }]
+            },
+            "ROOT_QUERY": {
+                "__typename": "Query",
+                "guestWedding": {
+                    "__ref": "GDS_GuestWedding:8c267ec2-e31f-4ab7-a569-8244cdd14edb"
+                },
+                "events": [{
+                    "__ref": "GDS_Event:bf7ded95-eca6-47a7-b6df-a8d2de811dbc"
+                }],
+                "weddingWebsiteResult({\"pin\":null,\"slugOrVanity\":\"wedding\"})": {
+                    "__ref": "WWS_WeddingWebsiteV2:25908291"
+                },
+                "wedding": {
+                    "__typename": "Wedding",
+                    "weddingDate": "2025-01-19",
+                    "season": null
+                },
+                "weddingDatePreferences({\"pin\":null})": {
+                    "__typename": "WeddingDatePreferences",
+                    "datePreference": "Exact",
+                    "season": null,
+                    "year": null,
+                    "weddingDate": "2025-01-19",
+                    "weddingDateFormat": "natural",
+                    "weddingDateRangeStart": null,
+                    "weddingDateRangeEnd": null,
+                    "weddingEventTime": null,
+                    "hideCountdown": false,
+                    "hideDate": false
+                }
+            }
+        },
+        "apolloClient": null
+    },
+    "page": "/[pathPrefix]/[slug]/[[...route]]",
+    "query": {
+        "pathPrefix": "us",
+        "slug": "wedding"
+    },
+    "buildId": "ZrhTNjP9_V_Txb5JNb3VX",
+    "assetPrefix": "./assets",
+    "runtimeConfig": {
+    },
+    "isFallback": false,
+    "customServer": true,
+    "gip": true,
+    "appGip": true,
+    "scriptLoader": []
+}

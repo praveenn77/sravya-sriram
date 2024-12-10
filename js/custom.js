@@ -9,6 +9,7 @@ function getRSVPElements() {
         show: (showId, textContent) => {
             rsvpId.forEach((id) => {
                 const ele = document.getElementById(id);
+                if(!ele) return;
                 if (id === showId) {
                     ele.style.display = 'block';
                 } else {

@@ -1539,26 +1539,6 @@
                   "visible": true,
                   "location": null
               },
-              "GDS_Event:bf7ded95-eca6-47a7-b6df-a8d2de811dbc": {
-                  "__typename": "GDS_Event",
-                  "id": "bf7ded95-eca6-47a7-b6df-a8d2de811dbc",
-                  "attire": null,
-                  "endTime": null,
-                  "name": "Reception",
-                  "notes": null,
-                  "time": null,
-                  "type": "WeddingDay",
-                  "visible": true,
-                  "date": "2025-01-19",
-                  "requireRsvp": true,
-                  "sameVenue": null,
-                  "location": null,
-                  "subEvents": [{
-                      "__ref": "GDS_SubEvent:87d5a6d6-fcdc-4cfb-84d9-3022515d19fe"
-                  }, {
-                      "__ref": "GDS_SubEvent:f9482106-1c54-4bf0-a5e6-c9bdc4a57bcc"
-                  }]
-              },
               "WWS_Theme:2707": {
                   "__typename": "WWS_Theme",
                   "id": 2707,
@@ -2066,6 +2046,15 @@
                   "description": "",
                   "embededCode": "<div id=rsvp-container><div id=rsvp-info><div class=\"css-ie9n28 info-1\">Thanks for submitting RSVP with us, we looking forward to see you 🤗.</div><div class=\"css-ie9n28 info-2\" id=rsvp-user-info></div><button class=css-c67cwm color=primary data-testid=guest-search-submit id=submit-another onclick=onSubmitAnother() style=margin-bottom:20px type=button>Submit Another</button></div><div class=\"css-ie9n28 info-1\" id=rsvp-submitting>Submitting your response...🚎</div><div class=\"css-ie9n28 info-1\" id=rsvp-error>Error in submitting your RSVP, please try again after sometime ❗️.</div><form data-testid=gs-form id=rsvp-form><div class=css-hlw4y3><div class=css-ie9n28>We are excited to have you there 😺!!!</div><div class=container--dc3a6><input id=name id=Gk2V-H6o_ class=\"body1--5a1d2 ease-out--30c7b base--790e3 field-base--b5cb5 input--3183f input-with-animated-label--c43d4 is-neutral--cded6\" name=\"Full Name\" onkeyup=onFormChange() placeholder=\" \"> <label class=\"body1--5a1d2 ease-out--30c7b animated-label--501ac label--50c4d label--5592e\" for=Gk2V-H6o_>Full Name</label></div><div class=\"container--dc3a6 snd-child\"><input id=email class=\"body1--5a1d2 ease-out--30c7b base--790e3 field-base--b5cb5 input--3183f input-with-animated-label--c43d4 is-neutral--cded6\" name=\"How many are you bringing with you?\" onkeyup=onFormChange() placeholder=\" \" type=email> <label class=\"body1--5a1d2 ease-out--30c7b animated-label--501ac label--50c4d label--5592e\" for=email>Email</label></div><div class=\"container--dc3a6 snd-child\"><input id=no_of_guest class=\"body1--5a1d2 ease-out--30c7b base--790e3 field-base--b5cb5 input--3183f input-with-animated-label--c43d4 is-neutral--cded6\" name=\"How many are you bringing with you?\" onkeyup=onFormChange() placeholder=\" \" type=number> <label class=\"body1--5a1d2 ease-out--30c7b animated-label--501ac label--50c4d label--5592e\" for=no_of_guest>How many are you bringing with you?</label></div></div><button class=css-c67cwm color=primary data-testid=guest-search-submit id=submit onclick=onFormSubmit() style=margin-bottom:20px type=button disabled=disabled>Submit</button></form></div>"
               },
+              "WWS_EmbedItem:136499139": {
+                "__typename": "WWS_EmbedItem",
+                "id": 136499139,
+                "type": "EmbedItem",
+                "title": "Map",
+                "rank": 1,
+                "description": "",
+                "embededCode": "<iframe src=\"https:\/\/www.google.com\/maps\/embed?pb=!1m18!1m12!1m3!1d3338.3623811295806!2d-96.56613882345113!3d33.209275973486136!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x864c0d9a88ab1c57%3A0x26168e74d59c4e5c!2sStone%20Crest%20Venue!5e0!3m2!1sen!2sin!4v1733816534831!5m2!1sen!2sin\" width=\"600\" height=\"450\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\" referrerpolicy=\"no-referrer-when-downgrade\"><\/iframe>"
+            },
               "WWS_Page:92188393": {
                 "__typename": "WWS_Page",
                 "id": 92188393,
@@ -2079,6 +2068,19 @@
                     }
                 ]
             },
+            "WWS_Page:92188444": {
+              "__typename": "WWS_Page",
+              "id": 92188444,
+              "routeName": "map",
+              "show": true,
+              "title": "Map",
+              "type": "ThingsToDoPage",
+              "items": [
+                  {
+                      "__ref": "WWS_EmbedItem:136499139"
+                  }
+              ]
+          },
               "WWS_Page:92188394": {
                   "__typename": "WWS_Page",
                   "id": 92188394,
@@ -2097,25 +2099,62 @@
                   "type": "CustomPage",
                   "items": []
               },
+              "GDS_SubEvent:f9482106-1c54-4bf0-a5e6-c9bdc4a57bcc": {
+                "__typename": "GDS_SubEvent",
+                "attire": null,
+                "endTime": null,
+                "id": "f9482106-1c54-4bf0-a5e6-c9bdc4a57bcc",
+                "name": "Reception",
+                "notes": null,
+                "time": null,
+                "type": "Reception",
+                "visible": true,
+                "location": {
+                    "__typename": "GDS_Location",
+                    "fullAddress": "160 Rockcrest Road, McKinney, TX, 75071",
+                    "name": "Stone Crest Venue"
+                }
+            },
+              "GDS_Event:bf7ded95-eca6-47a7-b6df-a8d2de811dbc": {
+                "__typename": "GDS_Event",
+                "id": "bf7ded95-eca6-47a7-b6df-a8d2de811dbc",
+                "attire": null,
+                "endTime": "22:00",
+                "name": "Reception",
+                "notes": null,
+                "time": "17:00",
+                "type": "WeddingDay",
+                "visible": true,
+                "date": "2025-01-19",
+                "requireRsvp": true,
+                "sameVenue": null,
+                "location": {
+                    "__typename": "GDS_Location",
+                    "fullAddress": "160 Rockcrest Road, McKinney, TX, 75071",
+                    "name": "Stone Crest Venue"
+                },
+                "subEvents": [
+                ]
+            },
               "WWS_WeddingWebsiteV2:25908291": {
                   "__typename": "WWS_WeddingWebsiteV2",
                   "id": 25908291,
                   "theme({\"themeId\":null})": {
                       "__ref": "WWS_Theme:2707"
                   },
-                  "fianceFirstName": "Ganesh",
-                  "fianceLastName": "Sriram",
+                  "fianceFirstName": "Sriram",
+                  "fianceLastName": "",
                   "firstName": "Sravya",
-                  "lastName": "Naveen",
+                  "lastName": "",
                   "hideCountdown": false,
                   "hideDate": false,
                   "registryNote": null,
                   "slug": "wedding",
                   "userUuid": "0cf53475-f370-4ca7-a584-2eeca98a116e",
                   "vanityRoot": "/",
-                  "weddingLocation": "Plano, TX",
+                  "weddingLocation": "McKinney, TX",
                   "weddingDateFormat": "natural",
-                  "searchEngineIndexable": true,
+                  "searchEngineIndexable": false,
                   "weddingDateRangeStart": null,
                   "weddingDateRangeEnd": null,
                   "weddingUuid": "8c267ec2-e31f-4ab7-a569-8244cdd14edb",
@@ -2139,9 +2178,7 @@
                   }, {
                       "__ref": "WWS_Page:92188393"
                   }, {
-                      "__ref": "WWS_Page:92188394"
-                  }, {
-                      "__ref": "WWS_Page:92188660"
+                      "__ref": "WWS_Page:92188444"
                   }]
               },
               "ROOT_QUERY": {

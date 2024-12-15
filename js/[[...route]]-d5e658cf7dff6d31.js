@@ -1139,15 +1139,7 @@
                             return s().wrap((function(n) {
                                 for (;;) switch (n.prev = n.next) {
                                     case 0:
-                                        if ("WWS_WeddingWebsiteV2" !== (null === t || void 0 === t || null === (e = t.weddingWebsiteResult) || void 0 === e ? void 0 : e.__typename) || !t.weddingWebsiteResult.userUuid) {
-                                            n.next = 12;
-                                            break
-                                        }
-                                        return n.prev = 2, n.next = 5, ge()("".concat("", "/v2/members/").concat(t.weddingWebsiteResult.userUuid, "/public-summary?eventType=wedding")).then((function(n) {
-                                            return n.json()
-                                        })).catch((function(n) {
-                                            throw console.error(n), new Error(n)
-                                        }));
+                                        
                                     case 5:
                                         r = n.sent, a(r), n.next = 12;
                                         break;

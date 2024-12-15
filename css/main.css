@@ -1,4 +1,3 @@
-
 @media (max-width:767.98px) {
     h1 {
         font-size: 1.75rem;
@@ -1053,45 +1052,43 @@ textarea {
 .css-c67cwm:hover {
     background-color: rgb(204, 204, 204);
     color: rgb(77, 29, 70);
-  }
-  
-.css-c67cwm{
+}
+
+.css-c67cwm {
     line-height: 2.75rem;
-  min-width: 180px;
-  padding: 0.125rem 1.25rem 0px;
-  border-radius: 2px;
-  cursor: pointer;
-  text-align: center;
-  display: block !important;
-  width: 100% !important;
-  transition-duration: 0.1s;
-  transition-timing-function: ease-out;
-  transition-delay: 0s;
-  transition-behavior: normal;
-  transition-property: background-color, color, border-color;
-  font-family: Libre Baskerville;
-  letter-spacing: 2px;
-  color: rgb(77, 29, 70);
-  font-size: 14px;
-  font-weight: 600 !important;
-  font-style: normal;
-  position: relative;
-  margin-top: 20px;
-  background-color: rgb(255, 255, 255);
-  border: 1px solid rgb(255, 255, 255);
-  min-width:180px;
+    min-width: 180px;
+    padding: 0.125rem 1.25rem 0px;
+    border-radius: 2px;
+    cursor: pointer;
+    text-align: center;
+    display: block !important;
+    width: 100% !important;
+    transition-duration: 0.1s;
+    transition-timing-function: ease-out;
+    transition-delay: 0s;
+    transition-behavior: normal;
+    transition-property: background-color, color, border-color;
+    font-family: Libre Baskerville;
+    letter-spacing: 2px;
+    color: rgb(77, 29, 70);
+    font-size: 14px;
+    font-weight: 600 !important;
+    font-style: normal;
+    position: relative;
+    margin-top: 20px;
+    background-color: rgb(255, 255, 255);
+    border: 1px solid rgb(255, 255, 255);
+    min-width: 180px;
 }
 
-.css-nrz31m{
-    width: 480px;
-}
 
-.css-nrz31m form{
+.css-nrz31m form {
     width: 100%;
 }
 
 
-.css-c67cwm:disabled, .css-c67cwm:hover:disabled {
+.css-c67cwm:disabled,
+.css-c67cwm:hover:disabled {
     opacity: 0.5;
     cursor: default;
     background-color: rgb(255, 255, 255);
@@ -1101,10 +1098,11 @@ textarea {
     font-weight: 600 !important;
 }
 
-.snd-child{
+.snd-child {
     margin-top: 20px;
 }
-.css-ie9n28{
+
+.css-ie9n28 {
     padding: 0px;
     max-width: 550px;
     text-align: left;
@@ -1117,12 +1115,24 @@ textarea {
     font-weight: 400;
     text-transform: none;
 }
+
 .css-ie9n28.info-1 {
     font-size: 15px;
 }
 
-.css-ie9n28.info-2{
+.css-ie9n28.info-2 {
     font-size: 16px;
     line-height: 0;
     font-weight: 900;
+}
+
+.EmbedItem {
+    width: 100%;
+}
+
+.navigate {
+    font-size: 16px !important;
+    text-decoration: underline !important;
+    text-align: center !important;
+    cursor: pointer !important;
 }

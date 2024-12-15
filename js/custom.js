@@ -9,7 +9,7 @@ function getRSVPElements() {
         show: (showId, textContent) => {
             rsvpId.forEach((id) => {
                 const ele = document.getElementById(id);
-                if(!ele) return;
+                if (!ele) return;
                 if (id === showId) {
                     ele.style.display = 'block';
                 } else {
@@ -96,14 +96,14 @@ function onFormSubmit() {
 
 function saveToDB(name, nog, email) {
     const url = 'https://script.google.com/macros/s/AKfycbyAolZAb2EREXCd4NJ7MD8UYnI2dc-hkinjSFZPnovxirwmo3m1RECMxp0x4QyqBXlLZg/exec'
- 
+
     const data = {
         name,
-        guests:nog,
+        guests: nog,
         email
     };
 
-    fetch(url,  {
+    fetch(url, {
         method: 'POST',
         mode: 'no-cors',
         cache: 'no-cache',
@@ -145,7 +145,41 @@ function onElementAttached(selector, callback) {
     });
 }
 
+function onEventLoad() {
+    const elements = document.getElementsByClassName('css-1gazxbx');
+    Array.from(elements).forEach(ele => {
+        if (ele.textContent === 'Click here to navigate') {
+            ele.classList.add('navigate');
+            ele.addEventListener('click', () => {
+                window.open('https://maps.app.goo.gl/c8Ax6Hcxn6FTNrAc7', '_blank')
+            })
+        }
+    });
+}
+
+function onMapLoad() {
+    const elements = document.getElementsByClassName('css-ie9n28');
+    Array.from(elements).forEach(ele => {
+        if (ele.textContent === 'Click here to navigate') {
+            ele.classList.add('navigate');
+            ele.addEventListener('click', () => {
+                window.open('https://maps.app.goo.gl/c8Ax6Hcxn6FTNrAc7', '_blank')
+            })
+        }
+    });
+}
+
+// Usage
+onElementAttached(`div[data-testid="event-row-0"]`, (element) => {
+    onEventLoad();
+});
+
 // Usage
 onElementAttached(".EmbedItem", (element) => {
     onContainerLoad();
+    onMapLoad();
 });
+
+
+// Handle Initial Load
+window.addEventListener('load', onEventLoad);

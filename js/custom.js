@@ -179,7 +179,11 @@ onElementAttached(`div[data-testid="event-row-0"]`, (element) => {
 
 // Usage
 onElementAttached(".EmbedItem", (element) => {
-    onContainerLoad();
+    try{
+        onContainerLoad()
+    } catch(e){
+        console.log(e);
+    }
     onMapLoad();
 });
 

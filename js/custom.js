@@ -7,6 +7,9 @@ function getRSVPElements() {
         SUBMITTING: 'rsvp-submitting',
         ERROR: 'rsvp-error',
         show: (showId, textContent) => {
+            if(!rsvpUserInfo){
+                return;
+            }
             rsvpId.forEach((id) => {
                 const ele = document.getElementById(id);
                 if (!ele) return;

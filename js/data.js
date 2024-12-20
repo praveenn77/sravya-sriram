@@ -9,7 +9,7 @@ window.__NEXT_DATA__ = {
                 "id": "8c267ec2-e31f-4ab7-a569-8244cdd14edb",
                 "isPrivateRsvp": false,
                 "rsvpAsAPage": false,
-                "rsvpPageHidden": true
+                "rsvpPageHidden": false
             },
             "GDS_SubEvent:87d5a6d6-fcdc-4cfb-84d9-3022515d19fe": {
                 "__typename": "GDS_SubEvent",
@@ -796,15 +796,6 @@ window.__NEXT_DATA__ = {
                 "show": false,
                 "title": "Registry",
                 "type": "RegistryPage",
-                "items": []
-            },
-            "WWS_Page:92188660": {
-                "__typename": "WWS_Page",
-                "id": 92188660,
-                "routeName": "rsvp-try",
-                "show": false,
-                "title": "RSVP Try",
-                "type": "CustomPage",
                 "items": []
             },
             "GDS_SubEvent:f9482106-1c54-4bf0-a5e6-c9bdc4a57bcc": {

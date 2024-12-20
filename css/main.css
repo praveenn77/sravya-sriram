@@ -1141,3 +1141,77 @@ textarea {
 .StoryItem {
     max-width: 800px !important;
 }
+
+.css-1pnbmhy {
+    letter-spacing:1px;
+    line-height:1.25;
+    -webkit-align-items:center;
+    -webkit-box-align:center;
+    -ms-flex-align:center;
+    align-items:center;
+    border-radius:2px;
+    cursor:pointer;
+    display:-webkit-box;
+    display:-webkit-flex;
+    display:-ms-flexbox;
+    display:flex;
+    -webkit-flex-direction:column;
+    -ms-flex-direction:column;
+    flex-direction:column;
+    -webkit-box-pack:center;
+    -ms-flex-pack:center;
+    -webkit-justify-content:center;
+    justify-content:center;
+    margin:0 10px;
+    padding:13px 36px;
+    -webkit-text-decoration:none;
+    text-decoration:none;
+    -webkit-transition:all 0.25s;
+    transition:all 0.25s;
+    background-color:#414042;
+    color:#ffffff;
+    font-family:EB Garamond;
+    letter-spacing:1px;
+    color:#414042;
+    font-size:17px;
+    font-weight:500;
+    background-color:#414042;
+    color:#ffffff;
+    text-transform:uppercase;
+    letter-spacing:2px;
+    font-weight:700!important;
+    font-style:normal;
+    font-weight:normal;
+    margin:0 auto;
+    width:-webkit-fit-content;
+    width:-moz-fit-content;
+    width:fit-content;
+    padding:0.75rem 1.25rem;
+  }
+  @media (max-width: 640px) {
+    .css-1pnbmhy {
+      font-size:calc(17px * 0.875);
+    }
+  }
+  @media(max-width: 640px) {
+    .css-1pnbmhy {
+      font-size:calc(17px * 0.9);
+    }
+  }
+  .css-1pnbmhy:hover {
+    background-color:rgba(65,64,66,70%);
+    background-color:#676668;
+    color:#ffffff;
+  }
+  .verticalLayout.homePage .css-1pnbmhy {
+    padding:0.75rem 3.25rem;
+  }
+  @media (min-width: 768px) {
+    .css-1pnbmhy {
+      margin:0 auto;
+    }
+    .verticalLayout.homePage .css-1pnbmhy {
+      margin:0 0 1rem;
+    }
+  }
+  

@@ -7,7 +7,7 @@ function getRSVPElements() {
         SUBMITTING: 'rsvp-submitting',
         ERROR: 'rsvp-error',
         show: (showId, textContent) => {
-            if(!rsvpUserInfo){
+            if (!rsvpUserInfo) {
                 return;
             }
             rsvpId.forEach((id) => {
@@ -36,7 +36,7 @@ function onFormChange() {
     const nocInput = document.getElementById('no_of_child');
     const songInput = document.getElementById('song_name');
     const albumInput = document.getElementById('song_album');
-    
+
     if (nogInput.value.length > 0) {
         nogInput.setAttribute('data-has-value', '');
     } else {
@@ -123,12 +123,12 @@ function onFormSubmit() {
     }
     const rsvpElements = getRSVPElements();
     rsvpElements.show(rsvpElements.SUBMITTING);
-    saveToDB({name, nog, email, noc, song: songInput.value, album: albumInput.value });
+    saveToDB({ name, nog, email, noc, song: songInput.value, album: albumInput.value });
 }
 
 
 
-function saveToDB({name, nog, email, noc, song, album}) {
+function saveToDB({ name, nog, email, noc, song, album }) {
     const url = 'https://script.google.com/macros/s/AKfycbyAolZAb2EREXCd4NJ7MD8UYnI2dc-hkinjSFZPnovxirwmo3m1RECMxp0x4QyqBXlLZg/exec'
 
     const data = {
@@ -206,16 +206,37 @@ function onMapLoad() {
     });
 }
 
+function addRSVPButton() {
+    const oldRef = document.querySelector(`a[href="/us/wedding/rsvp"]`);
+    if (!oldRef) {
+        return;
+    }
+    // const newRef = document.createElement('div');
+    // newRef.classList.add('css-1pnbmhy');
+    // newRef.innerText = 'RSVP';
+    // oldRef.parentNode.replaceChild(newRef, oldRef);
+    oldRef.setAttribute('href', '#');
+    oldRef.addEventListener('click', (event) => {
+        event.preventDefault();
+        event.stopPropagation();
+        const rsvpLink = document.querySelector(`a[href="/us/wedding/rsvp2"]`);
+        if (rsvpLink) {
+            rsvpLink.click();
+        }
+    });
+}
+
 // Usage
 onElementAttached(`div[data-testid="event-row-0"]`, (element) => {
+    addRSVPButton();
     onEventLoad();
 });
 
 // Usage
 onElementAttached(".EmbedItem", (element) => {
-    try{
+    try {
         onContainerLoad()
-    } catch(e){
+    } catch (e) {
         console.log(e);
     }
     onMapLoad();
@@ -224,3 +245,4 @@ onElementAttached(".EmbedItem", (element) => {
 
 // Handle Initial Load
 window.addEventListener('load', onEventLoad);
+window.addEventListener('load', addRSVPButton);

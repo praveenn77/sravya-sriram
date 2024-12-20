@@ -1050,8 +1050,8 @@ textarea {
 }
 
 .css-c67cwm:hover {
-    background-color: rgb(204, 204, 204);
-    color: rgb(77, 29, 70);
+    background-color: rgb(103, 102, 104);
+    color: rgb(255, 255, 255);
 }
 
 .css-c67cwm {
@@ -1070,15 +1070,16 @@ textarea {
     transition-property: background-color, color, border-color;
     font-family: Libre Baskerville;
     letter-spacing: 2px;
-    color: rgb(77, 29, 70);
+    color: rgb(255, 255, 255);
     font-size: 14px;
     font-weight: 600 !important;
     font-style: normal;
     position: relative;
     margin-top: 20px;
-    background-color: rgb(255, 255, 255);
-    border: 1px solid rgb(255, 255, 255);
+    background-color: rgb(65, 64, 66);
+    border: 1px solid rgb(65, 64, 66);
     min-width: 180px;
+    text-transform: uppercase;
 }
 
 
@@ -1091,11 +1092,12 @@ textarea {
 .css-c67cwm:hover:disabled {
     opacity: 0.5;
     cursor: default;
-    background-color: rgb(255, 255, 255);
-    color: rgb(77, 29, 70);
+    background-color: rgb(65, 64, 66);
+    color: rgb(255, 255, 255);
+    text-transform: uppercase;
     letter-spacing: 2px;
+    font-weight: 700 !important;
     font-style: normal;
-    font-weight: 600 !important;
 }
 
 .snd-child {
@@ -1110,7 +1112,6 @@ textarea {
     margin: 32px 0px;
     font-family: "Libre Baskerville";
     letter-spacing: 2px;
-    color: rgb(255, 255, 255);
     font-size: 14px;
     font-weight: 400;
     text-transform: none;
@@ -1135,4 +1136,8 @@ textarea {
     text-decoration: underline !important;
     text-align: center !important;
     cursor: pointer !important;
+}
+
+.StoryItem {
+    max-width: 800px !important;
 }

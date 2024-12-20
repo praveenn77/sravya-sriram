@@ -33,11 +33,32 @@ function onFormChange() {
     const nameInput = document.getElementById('name');
     const name = nameInput.value;
     const nogInput = document.getElementById('no_of_guest');
-
+    const nocInput = document.getElementById('no_of_child');
+    const songInput = document.getElementById('song_name');
+    const albumInput = document.getElementById('song_album');
+    
     if (nogInput.value.length > 0) {
         nogInput.setAttribute('data-has-value', '');
     } else {
         nogInput.removeAttribute('data-has-value');
+    }
+
+    if (nocInput.value.length > 0) {
+        nocInput.setAttribute('data-has-value', '');
+    } else {
+        nocInput.removeAttribute('data-has-value');
+    }
+
+    if (songInput.value.length > 0) {
+        songInput.setAttribute('data-has-value', '');
+    } else {
+        songInput.removeAttribute('data-has-value');
+    }
+
+    if (albumInput.value.length > 0) {
+        albumInput.setAttribute('data-has-value', '');
+    } else {
+        albumInput.removeAttribute('data-has-value');
     }
 
     const emailInput = document.getElementById('email');
@@ -83,27 +104,40 @@ function onFormSubmit() {
     const name = nameInput.value;
     const nogInput = document.getElementById('no_of_guest');
     const email = document.getElementById('email').value;
+    const nocInput = document.getElementById('no_of_child');
+    const songInput = document.getElementById('song_name');
+    const albumInput = document.getElementById('song_album');
     let nog = nogInput.value;
     nog = nog ? parseInt(nog) : 0;
     nog = isNaN(nog) ? 0 : nog;
     nog = nog >= 0 ? nog : 0;
+
+    let noc = nocInput.value;
+    noc = noc ? parseInt(noc) : 0;
+    noc = isNaN(noc) ? 0 : noc;
+    noc = noc >= 0 ? noc : 0;
+
+
     if (name.length <= 0) {
         return;
     }
     const rsvpElements = getRSVPElements();
     rsvpElements.show(rsvpElements.SUBMITTING);
-    saveToDB(name, nog, email);
+    saveToDB({name, nog, email, noc, song: songInput.value, album: albumInput.value });
 }
 
 
 
-function saveToDB(name, nog, email) {
+function saveToDB({name, nog, email, noc, song, album}) {
     const url = 'https://script.google.com/macros/s/AKfycbyAolZAb2EREXCd4NJ7MD8UYnI2dc-hkinjSFZPnovxirwmo3m1RECMxp0x4QyqBXlLZg/exec'
 
     const data = {
         name,
         guests: nog,
-        email
+        email,
+        noc,
+        song,
+        album
     };
 
     fetch(url, {
@@ -117,7 +151,7 @@ function saveToDB(name, nog, email) {
     })
         .then(response => {
             localStorage.setItem('rsvp-name', name);
-            localStorage.setItem('rsvp-nog', nog);
+            localStorage.setItem('rsvp-nog', nog + noc);
             localStorage.setItem('rsvp-email', email);
             onContainerLoad();
         })
@@ -149,7 +183,7 @@ function onElementAttached(selector, callback) {
 }
 
 function onEventLoad() {
-    const elements = document.getElementsByClassName('css-1gazxbx');
+    const elements = document.getElementsByClassName('css-1n6xs0j');
     Array.from(elements).forEach(ele => {
         if (ele.textContent === 'Click here to navigate') {
             ele.classList.add('navigate');
@@ -161,7 +195,7 @@ function onEventLoad() {
 }
 
 function onMapLoad() {
-    const elements = document.getElementsByClassName('css-ie9n28');
+    const elements = document.getElementsByClassName('css-1920aoq');
     Array.from(elements).forEach(ele => {
         if (ele.textContent === 'Click here to navigate') {
             ele.classList.add('navigate');

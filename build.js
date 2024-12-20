@@ -34,10 +34,10 @@ fs.readFile('rsvpform.html', 'utf8', (err, data) => {
 
 
 function replaceInIndex(newValue){
-    let indexHtml = fs.readFileSync('index.html', 'utf8');
+    let dataJs = fs.readFileSync('./js/data.js', 'utf8');
     const oldValue = fs.readFileSync('oldValue', 'utf8');
    
-    indexHtml = indexHtml.replace(oldValue, newValue);
-    fs.writeFileSync('index.html', indexHtml);
+    dataJs = dataJs.replace(oldValue, newValue);
+    fs.writeFileSync('./js/data.js', dataJs);
     fs.writeFileSync('oldValue', newValue); 
 }

@@ -73,6 +73,11 @@ function onFormChange() {
         const submitBtn = document.getElementById('submit');
         submitBtn.removeAttribute('disabled');
         nameInput.setAttribute('data-has-value', '');
+        // const nogValue = nogInput.value;
+        // if(nogValue.length <= 0 || isNaN(nogValue) || parseInt(nogValue) < 1) {
+        //     nogInput.value = 1;
+        //     nogInput.setAttribute('data-has-value', '');
+        // }
     } else {
         const submitBtn = document.getElementById('submit');
         submitBtn.setAttribute('disabled', '');
@@ -86,8 +91,8 @@ function onContainerLoad() {
     const rsvpElements = getRSVPElements()
 
     if (name) {
-        nog = nog ? parseInt(nog) : 0;
-        const rsvpText = nog && !isNaN(nog) && nog > 0 ? `${name} (+${nog})` : name;
+        nog = nog ? parseInt(nog) : 1;
+        const rsvpText = nog && !isNaN(nog) && nog > 1 ? `${name} (+${nog - 1})` : name;
         rsvpElements.show(rsvpElements.INFO, rsvpText);
     }
     else {
@@ -108,9 +113,12 @@ function onFormSubmit() {
     const songInput = document.getElementById('song_name');
     const albumInput = document.getElementById('song_album');
     let nog = nogInput.value;
-    nog = nog ? parseInt(nog) : 0;
-    nog = isNaN(nog) ? 0 : nog;
-    nog = nog >= 0 ? nog : 0;
+    nog = nog ? parseInt(nog) : 1;
+    nog = isNaN(nog) ? 1 : nog;
+    nog = nog >= 1 ? nog : 1;
+
+    nogInput.value = nog;
+    nogInput.setAttribute('data-has-value', '');
 
     let noc = nocInput.value;
     noc = noc ? parseInt(noc) : 0;

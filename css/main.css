@@ -1214,4 +1214,17 @@ textarea {
       margin:0 0 1rem;
     }
   }
-  
+
+.music-icons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.music-icons img{
+    width: 4rem;
+    cursor: pointer;
+}
